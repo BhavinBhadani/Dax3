@@ -45,6 +45,13 @@ struct PokemonDetail: View {
                 Spacer()
             }
             .padding()
+            
+            Text("Stats")
+                .font(.title)
+            
+            Stats()
+                .environmentObject(pokemon)
+                .padding(.bottom, -7)
         }
         .navigationTitle(pokemon.name!.capitalized)
         .toolbar {

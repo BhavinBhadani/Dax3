@@ -39,7 +39,7 @@ extension Pokemon {
     }
     
     var highestStat: Stat {
-        stats.max { $0.value > $1.value }!
+        stats.max { $0.value < $1.value }!
     }
 }
 
