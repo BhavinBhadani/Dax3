@@ -6,19 +6,95 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		67AD9DB52D253FF30098F790 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AD9DB42D253FF30098F790 /* WidgetKit.framework */; };
+		67AD9DB72D253FF30098F790 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AD9DB62D253FF30098F790 /* SwiftUI.framework */; };
+		67AD9DC82D253FF50098F790 /* Dax3WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 67AD9DB22D253FF30098F790 /* Dax3WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67AD9DC62D253FF50098F790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67C2EF352D1BC4630072A73A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67AD9DB12D253FF30098F790;
+			remoteInfo = Dax3WidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67AD9DCD2D253FF50098F790 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67AD9DC82D253FF50098F790 /* Dax3WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		67AD9DB22D253FF30098F790 /* Dax3WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Dax3WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		67AD9DB42D253FF30098F790 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		67AD9DB62D253FF30098F790 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		67AD9DD62D2544730098F790 /* Dax3WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dax3WidgetExtension.entitlements; sourceTree = "<group>"; };
 		67C2EF3D2D1BC4630072A73A /* Dax3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dax3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		67AD9DC92D253FF50098F790 /* Exceptions for "Dax3Widget" folder in "Dax3WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 67AD9DB12D253FF30098F790 /* Dax3WidgetExtension */;
+		};
+		67AD9DCF2D2540590098F790 /* Exceptions for "Dax3" folder in "Dax3WidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Dax3.xcdatamodeld,
+				FetchedImage.swift,
+				Persistence.swift,
+				SamplePokemon.swift,
+				WidgetPokemon.swift,
+			);
+			target = 67AD9DB12D253FF30098F790 /* Dax3WidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		67AD9DB82D253FF30098F790 /* Dax3Widget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				67AD9DC92D253FF50098F790 /* Exceptions for "Dax3Widget" folder in "Dax3WidgetExtension" target */,
+			);
+			path = Dax3Widget;
+			sourceTree = "<group>";
+		};
 		67C2EF3F2D1BC4630072A73A /* Dax3 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				67AD9DCF2D2540590098F790 /* Exceptions for "Dax3" folder in "Dax3WidgetExtension" target */,
+			);
 			path = Dax3;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		67AD9DAF2D253FF30098F790 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67AD9DB72D253FF30098F790 /* SwiftUI.framework in Frameworks */,
+				67AD9DB52D253FF30098F790 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67C2EF3A2D1BC4630072A73A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +105,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67AD9DB32D253FF30098F790 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67AD9DB42D253FF30098F790 /* WidgetKit.framework */,
+				67AD9DB62D253FF30098F790 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		67C2EF342D1BC4630072A73A = {
 			isa = PBXGroup;
 			children = (
+				67AD9DD62D2544730098F790 /* Dax3WidgetExtension.entitlements */,
 				67C2EF3F2D1BC4630072A73A /* Dax3 */,
+				67AD9DB82D253FF30098F790 /* Dax3Widget */,
+				67AD9DB32D253FF30098F790 /* Frameworks */,
 				67C2EF3E2D1BC4630072A73A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				67C2EF3D2D1BC4630072A73A /* Dax3.app */,
+				67AD9DB22D253FF30098F790 /* Dax3WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +137,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		67AD9DB12D253FF30098F790 /* Dax3WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67AD9DCA2D253FF50098F790 /* Build configuration list for PBXNativeTarget "Dax3WidgetExtension" */;
+			buildPhases = (
+				67AD9DAE2D253FF30098F790 /* Sources */,
+				67AD9DAF2D253FF30098F790 /* Frameworks */,
+				67AD9DB02D253FF30098F790 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				67AD9DB82D253FF30098F790 /* Dax3Widget */,
+			);
+			name = Dax3WidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = Dax3WidgetExtension;
+			productReference = 67AD9DB22D253FF30098F790 /* Dax3WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		67C2EF3C2D1BC4630072A73A /* Dax3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67C2EF502D1BC4640072A73A /* Build configuration list for PBXNativeTarget "Dax3" */;
@@ -55,10 +166,12 @@
 				67C2EF392D1BC4630072A73A /* Sources */,
 				67C2EF3A2D1BC4630072A73A /* Frameworks */,
 				67C2EF3B2D1BC4630072A73A /* Resources */,
+				67AD9DCD2D253FF50098F790 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67AD9DC72D253FF50098F790 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				67C2EF3F2D1BC4630072A73A /* Dax3 */,
@@ -80,6 +193,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					67AD9DB12D253FF30098F790 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					67C2EF3C2D1BC4630072A73A = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -100,11 +216,19 @@
 			projectRoot = "";
 			targets = (
 				67C2EF3C2D1BC4630072A73A /* Dax3 */,
+				67AD9DB12D253FF30098F790 /* Dax3WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		67AD9DB02D253FF30098F790 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67C2EF3B2D1BC4630072A73A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +239,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		67AD9DAE2D253FF30098F790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67C2EF392D1BC4630072A73A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +255,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		67AD9DC72D253FF50098F790 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67AD9DB12D253FF30098F790 /* Dax3WidgetExtension */;
+			targetProxy = 67AD9DC62D253FF50098F790 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		67AD9DCB2D253FF50098F790 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Dax3WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7256R8536;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dax3Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dax3Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appernaut.Dax3.Dax3Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67AD9DCC2D253FF50098F790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Dax3WidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7256R8536;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dax3Widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dax3Widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appernaut.Dax3.Dax3Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		67C2EF4E2D1BC4640072A73A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,9 +444,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dax3/Dax3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dax3/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -277,9 +474,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dax3/Dax3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dax3/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -303,6 +502,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		67AD9DCA2D253FF50098F790 /* Build configuration list for PBXNativeTarget "Dax3WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67AD9DCB2D253FF50098F790 /* Debug */,
+				67AD9DCC2D253FF50098F790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		67C2EF382D1BC4630072A73A /* Build configuration list for PBXProject "Dax3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
